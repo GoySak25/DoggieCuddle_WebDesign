@@ -1,0 +1,52 @@
+
+div.div2 {
+    width:100%;
+    position:relative;  
+  }
+  
+  div.div3 {
+    width:100%;
+    height:100%;
+    position:relative;  
+  }
+  
+  
+  .card { 
+    width: 30rem;
+    margin: 0px; 
+    border: #ddd solid 1px; 
+    background: #f4f4f4; 
+    font-size: 14px;
+    padding: 10px;
+       transition: all 0.5s;
+       -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+   }
+   
+   
+   
+     .card:hover{
+       -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75) ;
+       -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75) ;
+       -box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+       margin: 1px; 
+       font-size: 15px;
+     }
+     .card-columns {
+       display: inline-block
+     }
+   
+     .card-img-top {
+       width: 100%;
+       height: 18vw;
+       object-fit: cover;
+   }
+  
+   .card-text{
+     font-family: fantasy;
+font-size: 25px;
+   }
+   .row {
+    grid-column: col 2 / span 2;
+    grid-row: row 2;
+  }
+   

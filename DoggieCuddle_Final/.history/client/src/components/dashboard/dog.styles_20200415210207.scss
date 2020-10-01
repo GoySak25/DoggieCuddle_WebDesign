@@ -1,0 +1,120 @@
+/* html{
+    background: #FAF7F2;
+    background-image: url(https://s3.postimg.org/s1n3ji1ur/paper_fibers_2_X.png);
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }  */
+  
+
+  $bg-color: #f3f3f3;
+  $shadow-color: darken( $bg-color, 25%);
+  $button-color: #337AB7;
+  $button-shadow-color: darken($button-color, 25%);
+  $cursive-font: 'Pacifico', cursive;
+  $font-size: 18px;
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: $bg-color;
+  }
+  
+  .product-card {
+    background-color: #fdfefe;
+    max-width: 550px;
+    min-height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    box-shadow: 8px 12px 30px $shadow-color;
+    color: #919495;
+    font-weight: normal;
+    text-align: left;
+    font-size: $font-size;
+    position: relative;
+  }
+  
+  .product-details {
+    width: 53%;
+    float: left;
+    height: 100%;
+    padding: 30px;
+    h1 {
+      color: #333;
+      font-family: $cursive-font;
+      margin-bottom: 35px;
+    }
+    button {
+      width: 150px;
+      height: 50px;
+      margin-top: 20px;
+      background-color: $button-color;
+      border-radius: 0;
+      color: #fff;
+      box-shadow: 2px 2px 7px $button-shadow-color;
+      &:hover, &:active, &:focus {
+        color: #fff;
+      }
+    }
+  }
+  
+  .product-image {
+    position: absolute;
+    right: -20px;
+    top: -40px;
+    img {
+      max-width: 400px;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .product-card {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    
+  }
+  
+  @media (max-width: 540px) {
+    .product-card {
+      overflow: hidden;
+      margin-bottom: 50px;
+    }
+    .product-details {
+      width: 60%;
+      z-index: 1;
+    }
+    .product-image {
+      width: 100%;
+      left: 40%;
+      top: -50px;
+    }
+  }
+  
+  @media (max-width: 440px) {
+      .product-details {
+        width: 65%;
+    }
+  }
+  
+  @media (max-width: 365px) {
+      .product-details {
+        width: 80%;
+        position: relative;
+        color: #333;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  
+  .product-card {
+    background-color: #fff;
+    box-shadow: 0 2px 25px 2px rgba(0, 0, 0, 1), 0 2px 50px 2px rgba(0, 0, 0, 1), 0 0 100px 3px rgba(0, 0, 0, .25);
+    height: 1px;
+    margin: -1px auto 0;
+    width: 80%;
+    z-index: -1;
+  }
